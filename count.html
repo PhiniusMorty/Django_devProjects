@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Count</title>
+  </head>
+  <body>
+    <h1>This is a {{ count }} word/words text.</h1>
+    <a href="{% url 'home' %}">Start Again</a>
+    <h2>Your Text:</h2>
+    <p>{{fulltext}}</p>
+    <h2>Word Dictionary</h2>
+    {% for word,counttotal in sortedwords %}
+        {{word}} - {{counttotal}}
+        <br>
+        {% endfor %}
+
+  </body>
+</html>
