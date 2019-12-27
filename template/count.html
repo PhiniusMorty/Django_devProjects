@@ -10,7 +10,7 @@
     <h2>Your Text:</h2>
     <p>{{fulltext}}</p>
     <h2>Word Dictionary</h2>
-    {% for word,counttotal in sortedwords %}
+    {% for word,counttotal in worddictionary %}
         {{word}} - {{counttotal}}
         <br>
         {% endfor %}
